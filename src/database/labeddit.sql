@@ -11,14 +11,14 @@ CREATE TABLE users(
 
 INSERT INTO users (id, nickname, email, password, role)
 VALUES
--- tipo NORMAL e senha = rafael123@
-('u001', 'Rafael', 'rafael@email.com', '$2a$12$ml3SC1IgiEeETYE.jWa6IOOVNA8iXcJjNSz1mmPvAftSNJ1iT6iSu', 'USER'),
+-- tipo NORMAL e senha = Rafael123@
+('u001', 'Rafael', 'rafael@email.com', '$2a$12$NL5qvTKiizSpCbgF8.avmed9IT8IpjR0aDl6vr2Yh.XtJLVI5RJwq', 'USER'),
 
--- tipo NORMAL e senha = lana123@
-('u002', 'Lana', 'lana@email.com', '$2a$12$0388RoTLaULDdkRItDsM/ubbphnLlu4Be9Y9W3XF3oCpEshtLtWhO', 'USER'),
+-- tipo NORMAL e senha = Lana123@
+('u002', 'Lana', 'lana@email.com', '$2a$12$c9Q.C0NSwZ28XhBLWrR8tuBHi44d7PP.Gp0lNBHtIju/MXDAN0932', 'USER'),
 
--- tipo NORMAL e senha = gabriel123@
-('u003', 'Gabriel', 'gabriel@email.com', '$2a$12$w5yHIgaN4TYkKFDzrsqIs.lFU029JhDwo8QhuvQioZ03v60pARu8a', 'ADMIN');
+-- tipo Admin e senha = Gabriel123@
+('u003', 'Gabriel', 'gabriel@email.com', '$2a$12$U4W.sWgFqTRrDR67FnLIHOoFXI7edCj7VDroTjaA2IOQqPmf6SUbu', 'ADMIN');
 
 SELECT * from users;
 
@@ -112,7 +112,14 @@ CREATE TABLE likes_dislikes_comments(
 
 
 
+-- Queries de deleção
+
 DROP TABLE likes_dislikes_comments;
+
+
 DROP TABLE likes_dislikes_posts;
+
+DROP TABLE comments;
+
 DROP TABLE posts;
 DROP TABLE users;
